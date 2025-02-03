@@ -3,12 +3,29 @@
  */
 package org.example;
 
+import java.util.ArrayList;
+import java.util.List;
+
 public class App {
     public String getGreeting() {
-        return "Hello World!";
+        return "Welcome to The Counting Cards Algorithm";
     }
 
     public static void main(String[] args) {
         System.out.println(new App().getGreeting());
+        List<Integer> numberListCheck = new ArrayList<>();
+        List<Integer> numberListRemove = new ArrayList<>();
+        int[] numberArray = {1, 2, 3, 4, 5, 6, 7, 8, 9, 10};
+        ShuffleCheckAlgorithm shuffleCheckAlgorithm = new ShuffleCheckAlgorithm();
+        for (int i = 1; i <= 10; i++) {
+            numberListCheck.add(i);
+            numberListRemove.add(i);
+        }
+        System.out.println(shuffleCheckAlgorithm.shuffleCheck(numberListCheck));
+        System.out.println(ShuffleRemoveAlgorithm.shuffleRemove(numberListRemove));
+        System.out.println(FisherYatesShuffleAlgorithm.yatesShuffle(numberArray));
+
     }
+
+
 }

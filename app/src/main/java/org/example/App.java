@@ -15,15 +15,52 @@ public class App {
         System.out.println(new App().getGreeting());
         List<Integer> numberListCheck = new ArrayList<>();
         List<Integer> numberListRemove = new ArrayList<>();
-        int[] numberArray = {1, 2, 3, 4, 5, 6, 7, 8, 9, 10};
+        int[] numberArrayTrial1 = {16, 17, 18, 19, 20, 21, 22, 23};
         ShuffleCheckAlgorithm shuffleCheckAlgorithm = new ShuffleCheckAlgorithm();
-        for (int i = 1; i <= 10; i++) {
+        for (int i = 16; i <= 23; i++) {
             numberListCheck.add(i);
             numberListRemove.add(i);
         }
+        System.out.println("\nFirst Trial:");
         System.out.println(shuffleCheckAlgorithm.shuffleCheck(numberListCheck));
         System.out.println(ShuffleRemoveAlgorithm.shuffleRemove(numberListRemove));
-        System.out.println(FisherYatesShuffleAlgorithm.yatesShuffle(numberArray));
+        System.out.println(FisherYatesShuffleAlgorithm.yatesShuffle(numberArrayTrial1));
+        int[] numberArrayTrial2 = {1, 2, 3, 4, 5, 6, 7};
+        for (int i = 1; i <= 7; i++) {
+            numberListCheck.add(i);
+            numberListRemove.add(i);
+        }
+        System.out.println("\nSecond Trial:");
+        System.out.println(shuffleCheckAlgorithm.shuffleCheck(numberListCheck));
+        System.out.println(ShuffleRemoveAlgorithm.shuffleRemove(numberListRemove));
+        System.out.println(FisherYatesShuffleAlgorithm.yatesShuffle(numberArrayTrial2));
+        int[] numberArrayTrial3 = {106, 107, 108, 109, 110, 111, 112, 113, 114, 115, 116};
+        for (int i = 106; i <= 116; i++) {
+            numberListCheck.add(i);
+            numberListRemove.add(i);
+        }
+        System.out.println("\nThird Trial:");
+        System.out.println(shuffleCheckAlgorithm.shuffleCheck(numberListCheck));
+        System.out.println(ShuffleRemoveAlgorithm.shuffleRemove(numberListRemove));
+        System.out.println(FisherYatesShuffleAlgorithm.yatesShuffle(numberArrayTrial3));
+        int[] numberArrayTrial4 = {203, 204, 205};
+        for (int i = 203; i <= 205; i++) {
+            numberListCheck.add(i);
+            numberListRemove.add(i);
+        }
+        System.out.println("\nFourth Trial:");
+        System.out.println(shuffleCheckAlgorithm.shuffleCheck(numberListCheck));
+        System.out.println(ShuffleRemoveAlgorithm.shuffleRemove(numberListRemove));
+        System.out.println(FisherYatesShuffleAlgorithm.yatesShuffle(numberArrayTrial4));
+        int[] numberArrayTrial5 = {1, 2};
+        for (int i = 1; i <= 2; i++) {
+            numberListCheck.add(i);
+            numberListRemove.add(i);
+        }
+        System.out.println("\nFifth Trial:");
+        System.out.println(shuffleCheckAlgorithm.shuffleCheck(numberListCheck));
+        System.out.println(ShuffleRemoveAlgorithm.shuffleRemove(numberListRemove));
+        System.out.println(FisherYatesShuffleAlgorithm.yatesShuffle(numberArrayTrial5));
 
     }
 
